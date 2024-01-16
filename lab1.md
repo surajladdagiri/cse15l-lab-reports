@@ -1,6 +1,6 @@
 ## Lab Report 1 
 ***
- ## cd
+ __`cd`__
 1. Share an example of using the command with no arguments.
     *  ```
         [user@sahara ~/lecture1]$ cd
@@ -31,7 +31,7 @@
     * The error is simply saying that the specified path is to a file and not a directory since you can only change directory into a directory
 
 ***
- ## ls
+ __`ls`__
  
 1. Share an example of using the command with no arguments.
     *  ```
@@ -66,7 +66,7 @@
     * There is no error, in this example, it restates the path to `Hello.java`
     
 ***
- ## cat
+ __`cat`__
  
 1. Share an example of using the command with no arguments.
     *  ```
