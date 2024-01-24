@@ -1,4 +1,7 @@
-# Part 1
+# Lab Report 2
+___
+
+## Part 1
 
 **The code for the `ChatServer.java` file is found below:**
 ```
@@ -65,7 +68,7 @@ I ran this code on EdStem on port 4000 due to the simplicity it provided. The sc
     -  The `parameters` array simply takes the parameter variable `url` and calls the `getQuery()` method from the `URI` class which results in a String with the value `s=How+are+you&user=yash` and then took that result and used the `split()` method from the `String` class and split it by "=" resulting in an array with 3 elements: `{"s", "How+are+you&user", "yash"}`. The user is visible using the third element from this array, but the message isn't, so for the `message` array, it takes the second element and uses the `split()` method from the `String` class to split it by "&" which results in an array with 2 elements: `{"How+are+you", "user"}`. The first element of the `message` array is the message, and the third element of the `parameters` array is the user, so finally the `messages` ArrayList is updated with the correctly formated string using the `format()` method. The plus signs were replaced with spaces using the `replace()` method. Then finally, the `runningString` variable is used to store each element in the ArrayList followed by a new line and is the final variable returned  from the method.
 
 
-# Part 2
+## Part 2
 
 - **The absolute path to the private key for your SSH key for logging into ieng6 (on your computer, an EdStem workspace, or on the home directory of the lab computer)**
   
@@ -81,6 +84,6 @@ I ran this code on EdStem on port 4000 due to the simplicity it provided. The sc
    ![Logging into my ieng6 account without a password!](NoPassword.png)
 
 
-# Part 3
+## Part 3
 
 One of the things I learned this week was what all the ssh commands meant. I previously had some experience with ssh, primarily through past experience jailbreaking my iPhone, but it was very rudimentary and now I know what each individual command means. I also learned how to create a webserver with Java and learned what a port meant. I had some previous experience, but this assignment helped me get back into the swing. This has made me want to host my own website without a third-party host. I want to use this knowledge to create a server to host some files, like my homework files so that I can access them anywhere on any device, but to do that, I would need a computer I can sacrifice. Overall I learned some new skills and knowledge that will serve me well for the future.
