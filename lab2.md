@@ -65,3 +65,22 @@ I ran this code on EdStem on port 4000 due to the simplicity it provided. The sc
     -  The `parameters` array simply takes the parameter variable `url` and calls the `getQuery()` method from the `URI` class which results in a String with the value `s=How+are+you&user=yash` and then took that result and used the `split()` method from the `String` class and split it by "=" resulting in an array with 3 elements: `{"s", "How+are+you&user", "yash"}`. The user is visible using the third element from this array, but the message isn't, so for the `message` array, it takes the second element and uses the `split()` method from the `String` class to split it by "&" which results in an array with 2 elements: `{"How+are+you", "user"}`. The first element of the `message` array is the message, and the third element of the `parameters` array is the user, so finally the `messages` ArrayList is updated with the correctly formated string using the `format()` method. The plus signs were replaced with spaces using the `replace()` method. Then finally, the `runningString` variable is used to store each element in the ArrayList followed by a new line and is the final variable returned  from the method.
 
 
+# Part 2
+
+- **The absolute path to the private key for your SSH key for logging into ieng6 (on your computer, an EdStem workspace, or on the home directory of the lab computer)**
+  
+  ![The absolute path to the private key](PrivateKey.png)
+
+
+- **The absolute path to the public key for your SSH key for logging into ieng6 (this is the one you copied to your account on ieng6, so it should be a path on ieng6's file system)**
+
+   ![The absolute path to the public key](PublicKey.png)
+  
+- **A terminal interaction where you log into your ieng6 account without being asked for a password.**
+
+   ![Logging into my ieng6 account without a password!](NoPassword.png)
+
+
+# Part 3
+
+One of the things I learned this week was what all the ssh commands meant. I previously had some experience with ssh, primarily through past experience jailbreaking my iPhone, but it was very rudimentary and now I know what each individual command means. I also learned how to create a webserver with Java and learned what a port meant. I had some previous experience, but this assignment helped me get back into the swing.
