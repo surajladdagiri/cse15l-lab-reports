@@ -67,6 +67,7 @@ I ran this code on EdStem on port 4000 due to the simplicity it provided. The sc
 -  **How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.**
     -  The `parameters` array simply takes the parameter variable `url` and calls the `getQuery()` method from the `URI` class which results in a String with the value `s=How+are+you&user=yash` and then took that result and used the `split()` method from the `String` class and split it by "=" resulting in an array with 3 elements: `{"s", "How+are+you&user", "yash"}`. The user is visible using the third element from this array, but the message isn't, so for the `message` array, it takes the second element and uses the `split()` method from the `String` class to split it by "&" which results in an array with 2 elements: `{"How+are+you", "user"}`. The first element of the `message` array is the message, and the third element of the `parameters` array is the user, so finally the `messages` ArrayList is updated with the correctly formated string using the `format()` method. The plus signs were replaced with spaces using the `replace()` method. Then finally, the `runningString` variable is used to store each element in the ArrayList followed by a new line and is the final variable returned  from the method.
 
+___
 
 ## Part 2
 
@@ -83,6 +84,7 @@ I ran this code on EdStem on port 4000 due to the simplicity it provided. The sc
 
    ![Logging into my ieng6 account without a password!](NoPassword.png)
 
+___
 
 ## Part 3
 
