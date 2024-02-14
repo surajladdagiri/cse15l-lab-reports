@@ -59,6 +59,7 @@ ___
 
 I chose to research the `less` command. Due to the nature of this command(since it opens up a new window to display content rather than produce an "output"), I have opted to use screenshots and videos to demonstrate its usage and output rather than as code blocks. The input commands have been given as code blocks however  
 ___
+
 **`-p`**
 
 I got the option from [here](https://www.geeksforgeeks.org/less-command-linux-examples/).
@@ -77,6 +78,7 @@ This option allows you to open a file and start it at the first occurrence of a 
 
 
 ___
+
 **`-N`**
 
 I got the option from [here](https://linuxize.com/post/less-command-in-linux/).
@@ -94,6 +96,7 @@ This option allows you to open a file and it displays the line numbers of the le
 ![Output when using the command in conjunction with `-p`](-N2.png)
 
 ___
+
 **`-i`**
 
 I got the option from [here](https://man7.org/linux/man-pages/man1/less.1.html).
@@ -112,6 +115,7 @@ This option is applicable to the `-p` option and allows the search pattern to no
 
 
 ___
+
 **`-X`**
 
 I got the option from [here](https://linuxize.com/post/less-command-in-linux/).
