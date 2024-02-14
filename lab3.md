@@ -25,6 +25,7 @@ I chose to debug the `reversed()` method in the `ArrayExamples` class.
 ```
 - The output of running the two tests above is shown below
 
+![The output of the two tests when run](FailedTest.png)
   
 - The before and after of fixing the code is shown below
 
@@ -53,3 +54,5 @@ I chose to debug the `reversed()` method in the `ArrayExamples` class.
 ___
 
 # Part 2 - Researching Commands
+
+I chose to research the `less` command
