@@ -51,6 +51,8 @@ I chose to debug the `reversed()` method in the `ArrayExamples` class.
   }
 ```
 
+I made two changes. The first change was to replace `arr[i]=newArray[arr.length -i -1]` with `newArray[i] = arr[arr.length - i - 1]`. The purpose of the function is to create and return a new reversed list, but it used to alter the input array. This change alters the code so that the new array is being altered and populated with elements of the input array in reverse order, whereas the old code did the opposite and altered the old array and populated it with the reverse of the elements of the new array. The second change I made was to change what was returned. Previously, the old input array was returned but now the newly created array is returned. Even if the new array was correctly populated, if the function returned the input array, it will seem as though nothing has been done by the function. By altering this, all the work done by the function is returned.
+
 ___
 
 # Part 2 - Researching Commands
@@ -123,5 +125,6 @@ This option leaves the output of the command on the screen once you exit. This i
 
 
 `less -X -N ./technical/911report/chapter-2.txt`
+
 ![Output with line numbers](-X2.gif)
 
