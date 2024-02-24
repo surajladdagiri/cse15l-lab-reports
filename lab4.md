@@ -20,7 +20,7 @@ The next step is to clone the repository of interest
 
 ![Picture of the repo cloned](cloned.png)
 
-The command I typed was `git clone git@github.com:surajladdagiri/lab7.git`. I copied the `git@github.com:surajladdagiri/lab7.git` from the GitHub website under the Code option, followed by selecting the ssh option. I pasted it in the terminal by first typing in `git clone `(with a space at the end) and then pressed <command> and v to paste it then I pressed <enter>. This command just cloned all the contents of the repository and it set it up so that your local changes can be pushed to the online version of the repository on GitHub. I set up a private key on GitHub similar to how I set up a private key on the server. This made it so that when the server I am sshed into attempts to connect to github, it doesn't prompt for a password since it is a trusted client. This is analagous to how it was done between my laptop and the `ieng6` server.
+The command I typed was `git clone git@github.com:surajladdagiri/lab7.git`. I copied the `git@github.com:surajladdagiri/lab7.git` from the GitHub website under the Code option, followed by selecting the ssh option. I pasted it in the terminal by first typing in `git clone `(with a space at the end) and then pressed `<command>` and v to paste it then I pressed `<enter>`. This command just cloned all the contents of the repository and it set it up so that your local changes can be pushed to the online version of the repository on GitHub. I set up a private key on GitHub similar to how I set up a private key on the server. This made it so that when the server I am sshed into attempts to connect to github, it doesn't prompt for a password since it is a trusted client. This is analagous to how it was done between my laptop and the `ieng6` server.
 
 ___
 
@@ -55,7 +55,7 @@ Finally, I typed in `exi2<esc>`. Our cursor is at the first character of the "wo
 
 ![tests successfully running](testSuccess.png)
 
-After I edited the file in vim, I pressed `<shift>;wq<enter>`. The `<shift>;` was to type in `:`. When I typed `w`, it told vim to write to the file, or essentially to save my work, and finally `q` told vim to quit. I finally pressed `<enter>` which executed the two commands and brought me back to the terminal. There, I typed the sequence `<up><up><up><up><enter>` twice. The `javac -cp lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar *.java` command was 4 up in the bash search history and I used the `<up>` key to locate it and `<enter>` to run it. The `java -cp lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar: org.junit.runner.JUnitCore ListExamplesTests` command was also 4 up and I accessed it and ran it the same way.
+After I edited the file in vim, I pressed `<shift>;wq<enter>`. The `<shift>;` was to type in `:`. By typing in `:` it tells vim to look at a separate list of commands. When I typed `w`, it told vim to write to the file, or essentially to save my work, and finally `q` told vim to quit. I finally pressed `<enter>` which executed the two commands and brought me back to the terminal. There, I typed the sequence `<up><up><up><up><enter>` twice. The `javac -cp lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar *.java` command was 4 up in the bash search history and I used the `<up>` key to locate it and `<enter>` to run it. The `java -cp lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar: org.junit.runner.JUnitCore ListExamplesTests` command was also 4 up and I accessed it and ran it the same way.
 
 ___
 
@@ -63,11 +63,11 @@ The next step is to commit and push the changes to the git repository.
 
 ![git commit](gitCommit.png)
 
-The first command I gave was `git add ListExamples.java`. This told git to add `ListExamples.java` to the list of files that are going to be added or updated in the next commit. I then ran `git status` to ensure that `ListExamples.java` was succesfully added. Next, I ran the command `git commit -m "updated ListExamples.java"`. The `git commit` part of the command essentially just told git to create a new commit. The `-m` flag/option tells git that the following string in quotes is going to be message that is going to be attached to the commit. Typically, you want to add a message that indicates the changed you have made, which in this case I updated the `ListExamples.java`, so I chose my message to be "updated ListExamples.java", but it can be any message. This command in total, created a new commit with the message "updated ListExamples.java" on my local machine, but it was not uploaded to GitHub however.
+The first command I gave was `git add ListExamples.java`. This told git to add `ListExamples.java` to the list of files that are going to be added or updated in the next commit. I then ran `git status` to ensure that `ListExamples.java` was succesfully added. Next, I ran the command `git commit -m "updated ListExamples.java"`. The `git commit` part of the command essentially just told git to create a new commit. The `-m` flag/option tells git that the following string in quotes is going to be message that is going to be attached to the commit. Typically, you want to add a message that indicates the changed you have made, which in this case I updated the `ListExamples.java`, so I chose my message to be "updated ListExamples.java", but it can be any message. This command in total, created a new commit with the message "updated ListExamples.java" locally on the `ieng` server, but it was not uploaded to GitHub however.
 
 ![git push](gitPush.png)
 
-Finally, I gave the command `git push` followed by the command `exit`. The `git push` command just tells git to push the changes to GitHub and sync the cloud copy with my machine's copy. Finaly the `exit` command just tells my computer to end the connection to the `ieng6` server and brought me back to my local computer's terminal. 
+Next, I gave the command `git push` followed by the command `exit`. The `git push` command just tells git to push the changes to GitHub and sync the cloud copy with `ieng6`'s copy. Finally, the `exit` command just tells my computer to end the connection to the `ieng6` server and brings me back to my local computer's terminal. 
 
 ![updated GitHub](updatedGit.png)
 
