@@ -49,7 +49,7 @@ First, Vim must be opened on the file we want to edit. This is as simple as typi
 
 I then typed in `?i<enter>`. The `?` tells Vim that I want to search above where my cursor is. Since my cursor was at the start of the file, if I tell vim to search above, it wraps around and starts searching from the end. The `i` is simply what to look for and I could have replaced it with any letter, word, or sequence that I need to look for. Finally, when I pressed `<enter>`, it placed my cursor on the first instance where `i` occurred, which in this case is the perfect spot.
 
-![vim with the word corrected](vimCorrect.png)
+![vim with the word corrected](gitAdd.png)
 
 Finally, I typed in `exi2<esc>`. Our cursor is at the first character of the "word" that we need to edit, but we only need to edit the last character, so pressing `e`, takes us to the last character of the word we are currently on. Pressing `x` deletes the character our cursor is on. In this case, the `e` command placed our cursor on the last character which in this case was "1" and that needs to be replaced with a "2". After we deleted the "1", I pressed `i` which puts Vim into insert mode where it essentially behaves like a normal text editor. When I pressed the `x`, it deleted the "1" and moved the contents of the line to the right of where I deleted to the left by 1 spot and placed my cursor on character in the line which replaced the one I deleted, in this case, it was a space. When in insert mode, whatever you type will be placed behind where your cursor is. In this case, my cursor was on the first space after "index", so when I typed something in, it would be concatenated to "index", so when I typed in `2`, it transformed `index` into `index2`. Finally, I pressed `<esc>` which put vim back into normal mode.
 
@@ -61,13 +61,9 @@ ___
 
 The next step is to commit and push the changes to the git repository.
 
-![adding the file to git](gitAdd.png)
-
-The first command I gave was `git add ListExamples.java`. This told git to add `ListExamples.java` to the list of files that are going to be added or updated in the next commit. I then ran `git status` to ensure that `ListExamples.java` was succesfully added.
-
 ![git commit](gitCommit.png)
 
-Next, I ran the command `git commit -m "updated ListExamples.java"`. The `git commit` part of the command essentially just told git to create a new commit. The `-m` flag/option tells git that the following string in quotes is going to be message that is going to be attached to the commit. Typically, you want to add a message that indicates the changed you have made, which in this case I updated the `ListExamples.java`, so I chose my message to be "updated ListExamples.java", but it can be any message. This command in total, created a new commit with the message "updated ListExamples.java" on my local machine, but it was not uploaded to GitHub however.
+The first command I gave was `git add ListExamples.java`. This told git to add `ListExamples.java` to the list of files that are going to be added or updated in the next commit. I then ran `git status` to ensure that `ListExamples.java` was succesfully added. Next, I ran the command `git commit -m "updated ListExamples.java"`. The `git commit` part of the command essentially just told git to create a new commit. The `-m` flag/option tells git that the following string in quotes is going to be message that is going to be attached to the commit. Typically, you want to add a message that indicates the changed you have made, which in this case I updated the `ListExamples.java`, so I chose my message to be "updated ListExamples.java", but it can be any message. This command in total, created a new commit with the message "updated ListExamples.java" on my local machine, but it was not uploaded to GitHub however.
 
 ![git push](gitPush.png)
 
